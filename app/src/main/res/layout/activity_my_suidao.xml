@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:gravity="right|center"
+            android:layout_marginRight="20dp"
+            android:text="启动"/>
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/TitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+
+        <TextView
+            android:id="@+id/add"
+            style="@style/ActionText"
+
+            android:layout_gravity="left|center_vertical"
+            android:text="添加"/>
+        <TextView
+            android:id="@+id/edit"
+            android:layout_marginLeft="64dp"
+            style="@style/ActionText"
+            android:layout_gravity="left|center_vertical"
+            android:text="编辑"/>
+    </FrameLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp">
+
+        <com.activity.CustomRecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <FrameLayout
+        android:id="@+id/foot_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white">
+        <CheckBox
+            android:id="@+id/all_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="12dp"
+            android:textSize="14sp"
+            android:padding="4dp"
+            android:textColor="@android:color/black"
+            android:text="全部选择"
+            android:button="@drawable/custom_radio_btn"/>
+        <TextView
+            android:id="@+id/remove"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            style="@style/BlueBtnNoRoundCorner"
+            android:textSize="14sp"
+            android:text="删除"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:visibility="gone"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="暂无相关内容"/>
+
+</FrameLayout>

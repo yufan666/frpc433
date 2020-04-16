@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/demoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="app_title"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#eeeeee" />
+
+    <!--<CheckBox-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="textBtnDTR"-->
+        <!--android:id="@+id/checkBoxDTR" />-->
+
+
+    <!--<CheckBox-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="textBtnRTS"-->
+        <!--android:id="@+id/checkBoxRTS" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt1_0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="学习1"/>
+        <Button
+            android:id="@+id/bt1_1"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt2_0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="学习2"/>
+        <Button
+            android:id="@+id/bt2_1"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt3_0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="学习3"/>
+        <Button
+            android:id="@+id/bt3_1"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt4_0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="学习4"/>
+        <Button
+            android:id="@+id/bt4_1"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/demoTitle"
+        android:layout_height="1dip"
+        android:background="#eeeeee" />
+
+    <ScrollView
+        android:id="@+id/demoScroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <TextView
+            android:id="@+id/consoleText"
+            android:textIsSelectable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:typeface="monospace" />
+    </ScrollView>
+</LinearLayout>

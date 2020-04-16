@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="item_bg" format="reference"/>
+    <item name="sub_itemview" type="id"/>
+    <item name="itemview" type="id"/>
+</resources>
